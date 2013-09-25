@@ -1,0 +1,85 @@
+<class name="Template" index="">
+	<backColour>#00000000</backColour>
+	<borderColour>#FFFFFFFF</borderColour>
+	<borderWidth>0</borderWidth>
+	<cellData>122,154,16,14;159,111,0,0</cellData>
+	<cellsHigh>2</cellsHigh>
+	<cellsWide>4</cellsWide>
+	<marginWidth>4</marginWidth>
+	<name>Clock.image.w</name>
+	<class name="Element" index="elements0">
+		<elementType>Image</elementType>
+		<heightLand>323</heightLand>
+		<heightPort>312</heightPort>
+		<name>Background</name>
+		<visible>true</visible>
+		<widthLand>528</widthLand>
+		<widthPort>528</widthPort>
+		<xLand>0</xLand>
+		<xPort>0</xPort>
+		<yLand>0</yLand>
+		<yPort>0</yPort>
+		<class name="ImageElement" index="state0">
+			<alpha>255</alpha>
+			<stateName></stateName>
+			<uri>content://media/external/images/media/1480</uri>
+		</class>
+	</class>
+	<class name="Element" index="elements1">
+		<elementType>Image</elementType>
+		<heightLand>323</heightLand>
+		<heightPort>312</heightPort>
+		<name>Hour</name>
+		<visible>true</visible>
+		<widthLand>528</widthLand>
+		<widthPort>528</widthPort>
+		<xLand>0</xLand>
+		<xPort>0</xPort>
+		<yLand>0</yLand>
+		<yPort>0</yPort>
+		<class name="ImageElement" index="state0">
+			<alpha>255</alpha>
+			<stateName></stateName>
+			<uri>file:/mnt/emmc/Tasker/clock2/clock-hour-23.png</uri>
+		</class>
+	</class>
+	<class name="Element" index="elements2">
+		<elementType>Image</elementType>
+		<heightLand>323</heightLand>
+		<heightPort>312</heightPort>
+		<name>Minute</name>
+		<visible>true</visible>
+		<widthLand>528</widthLand>
+		<widthPort>528</widthPort>
+		<xLand>0</xLand>
+		<xPort>0</xPort>
+		<yLand>0</yLand>
+		<yPort>0</yPort>
+		<class name="ImageElement" index="state0">
+			<alpha>255</alpha>
+			<stateName></stateName>
+			<uri>file:/mnt/emmc/Tasker/clock2/clock-minute-11.png</uri>
+		</class>
+	</class>
+	<class name="Element" index="elements3">
+		<elementType>Rect</elementType>
+		<heightLand>8</heightLand>
+		<heightPort>8</heightPort>
+		<name>Rectangle1</name>
+		<visible>true</visible>
+		<widthLand>180</widthLand>
+		<widthPort>180</widthPort>
+		<xLand>338</xLand>
+		<xPort>9</xPort>
+		<yLand>109</yLand>
+		<yPort>0</yPort>
+		<class name="RectElement" index="state0">
+			<cornerRadius>0</cornerRadius>
+			<corners>all</corners>
+			<endColour>#FFFFFF00</endColour>
+			<shade>none</shade>
+			<startColour>#FFFFFF00</startColour>
+			<stateName></stateName>
+		</class>
+	</class>
+</class>
