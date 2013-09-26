@@ -1,5 +1,10 @@
 This profile together with a zoom-widget is for advanced users, as the documentation will be quite scarce. Reading Tasker-Code is of advantage. Linux skills for customization is needed.
 
+**Features**
+* Highly configurable design with inkscape
+* Binary and 24 hour clock possible - even mixed together
+* Using standard Tasker/Zoom
+
 **Prerequisites**
 * Tasker
 * Zoom-Widget for Tasker
@@ -40,8 +45,11 @@ If it looks ugly, then your screen resolution does not match my device. Then you
 **Fully customizable ?**
 For this the linux-system with inkscape and GNU make comes into play. Just unpack the archive somewhere in your home-directory. If you execute make clean, make, then ideally the PNG-files will be created. These may look different, than the one supplied in the archive. Reason is, that the used font may not be available on your system. Anyway, if you do not like the look of your clock, then execute 'inkscape clock.svg' and there is the clock. Having skills for graphic design is of advantage. I haven't so the example does not look so nice. Hopefully the concept is clear. Attention: Do not change the 00 for Minute and Hour, as these will be automatically expanded by the awk/Makefile combo. For the modification:
 * picture size will not be modified during export, so can be adjusted to your phone
-* All Layers with name starting "Hour" will be exported as hour pictures
-* All Layers with name starting "Minute" will be exported as minute pictures
+* Layer Selection: All Layer with name starting ...
+  * ... "Hour" will be exported as hour pictures
+  * ... "Minute" will be exported as minute pictures
+  * ... "Hour-Bx" (x=0..5) will be exported as hour pictures, if bit <x> is in hour set
+  * ... "Minute-Bx" (x=0..4) will be exported as minute pictures, if bit <x> is in minute set
 * All Layers with name starting "Background"  will be exported as background
 * Do not expect any Layer combination effect except Normal to work !
 * Limitation is: you cannot separate tenths from ones from Minute or Hour
