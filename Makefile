@@ -25,6 +25,7 @@ svg/clock-background.svg:	svg/.dir clock.awk clock.svg
 
 mobile:	all
 	cp png/*.png /media/emmc/Tasker/clock2/
+	rm -f /mnt/sdcard/Zoom/cache/*
 	umount /media/emmc /media/ATRIX-SDHC
 
 pack:
