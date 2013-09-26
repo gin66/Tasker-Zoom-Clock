@@ -29,7 +29,7 @@ mobile:	all
 
 pack:
 	rm -f ZOOM-CLOCK.7z
-	7z a ZOOM-CLOCK.7z Tasker* Zoom* clock.awk clock.svg Makefile png/
+	7z a ZOOM-CLOCK.7z Tasker* Zoom* clock.awk clock.svg Makefile png/ WIKI.txt
 
 clean:
 	find . -name "*~" -delete
