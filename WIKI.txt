@@ -1,0 +1,54 @@
+This profile together with a zoom-widget is for advanced users, as the documentation will be quite scarce. Reading Tasker-Code is of advantage. Linux skills for customization is needed.
+
+**Prerequisites**
+* Tasker
+* Zoom-Widget for Tasker
+* 7z-Archive: http://tasker.wikidot.com/local--files/profile-index/ZOOM-CLOCK-fixed.7z
+
+**Good to create your own clock**
+* Linux-system
+* inkscape >= 0.48
+* gawk or awk
+* GNU-make
+* bash
+
++ How To
+
+**Set up Files**
+copy Tasker_project/Clock2.prj.xml into SD-Card's Tasker-project folder
+copy Zoom_template/clock.image.w.ztk.xml into SD-Card's Zoom-template folder
+create a directory /mnt/emmc/Tasker/clock2 and copy all png-files from the png-folder.
+If you have only a /mnt/sdcard, then prepare to change the Tasker code.
+I use /mnt/emmc, because on my phone this is the internal SD-card, which is near impossible to be changed.
+
+**Set up Widget**
+Install Zoom from http://zoom.dinglisch.net/, if you do not have it already.
+Create a 4x2 Widget on homescreen and use the template clock.image.w
+By this you should get a widget with name clock.image.w
+
+**Set up Tasker**
+Open Tasker and import the project clock2
+Execute the Task of the Profile Clock-Zoom-Arrange (all images in the widget will be
+adjusted). The Rectangle for the battery bar will not be positioned.
+
+**Works ?**
+If it works you should have a fully configurable 24 hour clock with a small battery bar on top. Just not configurable on your device, but your Linux-system. The battery bar will turn blue, if charged. During discharging goes from green over yellow to red. Percentages can be looked up in the Tasker code.
+
+**Doesn't work ?**
+If it looks ugly, then your screen resolution does not match my device. Then you need to change the values in the Clock-Zoom-Arrange Task for the size. All images will be resized to same size - filling the widget completely. Moreover the Battery-bar adjustment in Task battery need to be adjusted, too.
+
+**Fully customizable ?**
+For this the linux-system with inkscape and GNU make comes into play. Just unpack the archive somewhere in your home-directory. If you execute make clean, make, then ideally the PNG-files will be created. These may look different, than the one supplied in the archive. Reason is, that the used font may not be available on your system. Anyway, if you do not like the look of your clock, then execute 'inkscape clock.svg' and there is the clock. Having skills for graphic design is of advantage. I haven't so the example does not look so nice. Hopefully the concept is clear. Attention: Do not change the 00 for Minute and Hour, as these will be automatically expanded by the awk/Makefile combo. For the modification:
+* picture size will not be modified during export, so can be adjusted to your phone
+* All Layers with name starting "Hour" will be exported as hour pictures
+* All Layers with name starting "Minute" will be exported as minute pictures
+* All Layers with name starting "Background"  will be exported as background
+* Do not expect any Layer combination effect except Normal to work !
+* Limitation is: you cannot separate tenths from ones from Minute or Hour
+Other Layers will be suppressed during PNG-generation. Keep in mind, that Hour+Minute have to be used with transparent background, because in the Widget all images will be stacked onto each other with the background having Depth 0.
+
+For me works nicely and I like the concept to have not another Widget application on my Phone - only Tasker+Zoom :-).  The principle can be extended to a 12 am/pm clock (wishful - just not for me), having single digit 0-9 o'clock, or weather images (like Beautiful Widget).
+
+Up to You: Define touch action for Zoom Widget to e.g. open the clock to set an alarm
+
+Up to You2: Concept is not bound to a 4x2 widget size.
