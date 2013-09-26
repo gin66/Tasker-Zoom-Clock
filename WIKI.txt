@@ -25,6 +25,7 @@ copy Zoom_template/clock.image.w.ztk.xml into SD-Card's Zoom-template folder
 create a directory /mnt/emmc/Tasker/clock2 and copy all png-files from the png-folder.
 If you have only a /mnt/sdcard, then prepare to change the Tasker code.
 I use /mnt/emmc, because on my phone this is the internal SD-card, which is near impossible to be changed.
+If you update the images of the clock, do not forget to delete the ZOOM-image cache (s.Makefile as example)
 
 **Set up Widget**
 Install Zoom from http://zoom.dinglisch.net/, if you do not have it already.
