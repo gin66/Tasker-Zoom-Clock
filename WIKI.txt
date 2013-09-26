@@ -50,8 +50,8 @@ For this the linux-system with inkscape and GNU make comes into play. Just unpac
 * Layer Selection: All Layer with name starting ...
   * ... "Hour" will be exported as hour pictures
   * ... "Minute" will be exported as minute pictures
-  * ... "Hour-Bx" (x=0..5) will be exported as hour pictures, if bit <x> is in hour set
-  * ... "Minute-Bx" (x=0..4) will be exported as minute pictures, if bit <x> is in minute set
+  * ... "Hour-Bx" (x=0..4) will be exported as hour pictures, if bit <x> is in hour set
+  * ... "Minute-Bx" (x=0..5) will be exported as minute pictures, if bit <x> is in minute set
 * All Layers with name starting "Background"  will be exported as background
 * Do not expect any Layer combination effect except Normal to work !
 * Limitation is: you cannot separate tenths from ones from Minute or Hour
