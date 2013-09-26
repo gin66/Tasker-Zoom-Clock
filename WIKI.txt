@@ -8,7 +8,8 @@ This profile together with a zoom-widget is for advanced users, as the documenta
 **Prerequisites**
 * Tasker
 * Zoom-Widget for Tasker
-* 7z-Archive: http://tasker.wikidot.com/local--files/profile-index/ZOOM-CLOCK-fixed.7z
+* 7z-Archive: http://tasker.wikidot.com/local--files/clock-widget-zoom/ZOOM-CLOCK-V0.2.7z
+* git and use https://github.com/gin66/Tasker-Zoom-Clock.git as path to repository
 
 **Good to create your own clock**
 * Linux-system
@@ -58,6 +59,11 @@ Other Layers will be suppressed during PNG-generation. Keep in mind, that Hour+M
 
 For me works nicely and I like the concept to have not another Widget application on my Phone - only Tasker+Zoom :-).  The principle can be extended to a 12 am/pm clock (wishful - just not for me), having single digit 0-9 o'clock, or weather images (like Beautiful Widget).
 
+As packing/uploading files is a bit clumsy, updates will be pushed to github, only.
+https://github.com/gin66/Tasker-Zoom-Clock.git
+
 Up to You: Define touch action for Zoom Widget to e.g. open the clock to set an alarm
 
 Up to You2: Concept is not bound to a 4x2 widget size.
+
+Up to You3: Contribute your designs back to me or even better to github directly.
