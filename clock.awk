@@ -35,7 +35,6 @@ BEGIN {
 			p = 1
 			if (match(group,"inkscape:label=\"" LAYER "-B([0-5])",bit) > 0)
 				p = (m[bit[1]] == 1)
-print p,bit[1]
 			if (p == 1)
 				printf("%s",group)
 		}
