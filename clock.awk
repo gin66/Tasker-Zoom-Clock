@@ -1,7 +1,5 @@
 BEGIN {
-	if (N == "XX")
-		N="??"
-	else {
+	if (length(N) > 0) {
 		# Calculate binary mask to filter layers
 		i = 0
 		b = 1
