@@ -23,6 +23,12 @@
 			<alpha>255</alpha>
 			<stateName></stateName>
 			<uri>file:/mnt/emmc/Tasker/clock2/clock-background.png</uri>
+			<class name="LoadAppAction" index="onClick0">
+				<class name="AppData" index="AppData">
+					<className>com.android.deskclock.DeskClock</className>
+					<packageName>com.android.deskclock</packageName>
+				</class>
+			</class>
 		</class>
 	</class>
 	<class name="Element" index="elements1">
@@ -41,6 +47,12 @@
 			<alpha>255</alpha>
 			<stateName></stateName>
 			<uri>file:/mnt/emmc/Tasker/clock2/clock-hour-23.png</uri>
+			<class name="LoadAppAction" index="onClick0">
+				<class name="AppData" index="AppData">
+					<className>com.android.deskclock.DeskClock</className>
+					<packageName>com.android.deskclock</packageName>
+				</class>
+			</class>
 		</class>
 	</class>
 	<class name="Element" index="elements2">
@@ -59,6 +71,12 @@
 			<alpha>255</alpha>
 			<stateName></stateName>
 			<uri>file:/mnt/emmc/Tasker/clock2/clock-minute-11.png</uri>
+			<class name="LoadAppAction" index="onClick0">
+				<class name="AppData" index="AppData">
+					<className>com.android.deskclock.DeskClock</className>
+					<packageName>com.android.deskclock</packageName>
+				</class>
+			</class>
 		</class>
 	</class>
 	<class name="Element" index="elements3">
@@ -77,12 +95,18 @@
 			<alpha>255</alpha>
 			<stateName></stateName>
 			<uri>file:/mnt/emmc/Tasker/clock2/weather-01d.png</uri>
+			<class name="LoadAppAction" index="onClick0">
+				<class name="AppData" index="AppData">
+					<className>com.android.deskclock.DeskClock</className>
+					<packageName>com.android.deskclock</packageName>
+				</class>
+			</class>
 		</class>
 	</class>
 	<class name="Element" index="elements4">
 		<elementType>Rect</elementType>
 		<heightLand>8</heightLand>
-		<heightPort>8</heightPort>
+		<heightPort>39</heightPort>
 		<name>Rectangle1</name>
 		<visible>true</visible>
 		<widthLand>180</widthLand>
