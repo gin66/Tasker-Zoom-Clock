@@ -37,6 +37,8 @@ weather/%.png:
 #======================================================================
 
 mobile:	all
+	test -d /media/emmc/Tasker/clock2
+	rm /media/emmc/Tasker/clock2/*
 	cp png/*.png /media/emmc/Tasker/clock2/
 	rm -f /mnt/sdcard/Zoom/cache/*
 	umount /media/emmc /media/ATRIX-SDHC
