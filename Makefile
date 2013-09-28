@@ -41,7 +41,9 @@ mobile:	all
 	rm /media/emmc/Tasker/clock2/*
 	cp png/*.png /media/emmc/Tasker/clock2/
 	rm -f /mnt/sdcard/Zoom/cache/*
-	umount /media/emmc /media/ATRIX-SDHC
+	cp Zoom_template/Clock.image.w.ztl.xml /media/ATRIX-SHDC/Zoom/templates/
+	umount /media/emmc
+	if [ -d /media/ATRIX-SDHC ];then umount /media/ATRIX-SDHC;fi
 
 pack:
 	rm -f ZOOM-CLOCK.7z
