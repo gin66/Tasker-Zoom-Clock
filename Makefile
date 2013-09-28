@@ -24,18 +24,20 @@ svg/clock-hour-%.svg:	svg/.dir clock.awk clock.svg
 svg/clock-background.svg:	svg/.dir clock.awk clock.svg
 	gawk -v N=$* -v LAYER=Background -f clock.awk clock.svg >svg/clock-background.svg
 
-mobile:	all
-	cp png/*.png /media/emmc/Tasker/clock2/
-	rm -f /mnt/sdcard/Zoom/cache/*
-	umount /media/emmc /media/ATRIX-SDHC
-
-png/weather-%.png:	weather/%.png
-	cp weather/$*.png png/weather-$*.png
+svg/weather-%.svg:	svg/.dir clock.awk clock.svg weather/%.png
+	gawk -v I=$* -v LAYER=Weather -f clock.awk clock.svg >svg/weather-$*.svg
 
 # http://bugs.openweathermap.org/projects/api/wiki/Weather_Condition_Codes
 weather/%.png:
 	mkdir -p weather
 	wget -O weather/$*.png http://openweathermap.org/img/w/$*.png
+
+#======================================================================
+
+mobile:	all
+	cp png/*.png /media/emmc/Tasker/clock2/
+	rm -f /mnt/sdcard/Zoom/cache/*
+	umount /media/emmc /media/ATRIX-SDHC
 
 pack:
 	rm -f ZOOM-CLOCK.7z

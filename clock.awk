@@ -17,7 +17,10 @@ BEGIN {
 	}
 }
 
-{	gsub(">00<",">" N "<")	}
+{
+	if (length(N)>0) gsub(">00<",">" N "<")
+	if (length(I)>0) gsub("weather/[0-9dn]*.png","weather/" I ".png")
+}
 
 /<g/ {
 	ingroup++

@@ -1111,7 +1111,7 @@
      inkscape:zoom="1.3251686"
      inkscape:cx="263.60044"
      inkscape:cy="161.36621"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer4"
      showgrid="true"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
@@ -1891,8 +1891,20 @@
        sodipodi:cy="23.739862"
        sodipodi:rx="12.673585"
        sodipodi:ry="12.26476"
-       d="m 498.76691,23.739862 c 0,6.77364 -5.67416,12.26476 -12.67359,12.26476 -6.99942,0 -12.67358,-5.49112 -12.67358,-12.26476 0,-6.773639 5.67416,-12.26476 12.67358,-12.26476 6.99943,0 12.67359,5.491121 12.67359,12.26476 z"
+       d="m 498.76691,23.739862 a 12.673585,12.26476 0 1 1 -25.34717,0 12.673585,12.26476 0 1 1 25.34717,0 z"
        transform="translate(-141.61711,12.966164)"
        inkscape:transform-center-x="-27.800122" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Weather">
+    <image
+       y="84.442268"
+       x="404.37933"
+       id="image3338"
+       xlink:href="weather/01d.png"
+       height="123.19823"
+       width="123.19823" />
   </g>
 </svg>
