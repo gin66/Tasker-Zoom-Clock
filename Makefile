@@ -2,8 +2,10 @@ HOUR=$(shell /bin/bash -c "echo {0,1}{0,1,2,3,4,5,6,7,8,9} 2{0,1,2,3}")
 MINUTE=$(shell /bin/bash -c "echo {0,1,2,3,4,5}{0,1,2,3,4,5,6,7,8,9}")
 WEATHER=01d 02d 03d 04d 09d 10d 11d 13d 50d 01n 02n 03n 04n 09n 10n 11n 13n 50n
 
-all:	png/clock-background.png $(HOUR:%=png/clock-hour-%.png) $(MINUTE:%=png/clock-minute-%.png) \
-	$(WEATHER:%=png/weather-%.png)	  png/clock-hour-XX.png            png/clock-minute-XX.png
+all:	png/clock-background.png		\
+	$(HOUR:%=png/clock-hour-%.png)		\
+	$(MINUTE:%=png/clock-minute-%.png)	\
+	$(WEATHER:%=png/weather-%.png)
 
 .SECONDARY:
 
