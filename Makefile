@@ -45,4 +45,6 @@ pack:
 
 clean:
 	find . -name "*~" -delete
+
+purge:	clean
 	rm -fR svg png
