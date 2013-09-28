@@ -2,7 +2,7 @@
 	<Profile sr="prof154" ve="2">
 		<cdate>1378387752687</cdate>
 		<clp>true</clp>
-		<edate>1380121437918</edate>
+		<edate>1380130397796</edate>
 		<id>154</id>
 		<mid0>157</mid0>
 		<Event sr="con0" ve="2">
@@ -52,7 +52,7 @@
 	<Profile sr="prof166" ve="2">
 		<cdate>1380020253435</cdate>
 		<clp>true</clp>
-		<edate>1380122256050</edate>
+		<edate>1380130343819</edate>
 		<id>166</id>
 		<mid0>164</mid0>
 		<nme>Clock-Zoom-Display-On</nme>
@@ -63,7 +63,7 @@
 	<Profile sr="prof167" ve="2">
 		<cdate>1380023653579</cdate>
 		<clp>true</clp>
-		<edate>1380119663135</edate>
+		<edate>1380149643437</edate>
 		<id>167</id>
 		<mid0>168</mid0>
 		<nme>Clock-Zoom-Arrange</nme>
@@ -75,7 +75,7 @@
 	<Profile sr="prof170" ve="2">
 		<cdate>1380020253435</cdate>
 		<clp>true</clp>
-		<edate>1380122265609</edate>
+		<edate>1380130135805</edate>
 		<id>170</id>
 		<mid0>169</mid0>
 		<nme>Clock-Zoom-Display-Off</nme>
@@ -83,24 +83,46 @@
 			<code>210</code>
 		</Event>
 	</Profile>
+	<Profile sr="prof173" ve="2">
+		<cdate>1380350652870</cdate>
+		<clp>true</clp>
+		<edate>1380350738190</edate>
+		<id>173</id>
+		<mid0>171</mid0>
+		<nme>WeatherUpdate</nme>
+		<State sr="con0">
+			<code>160</code>
+			<Str sr="arg0" ve="3"/>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+		</State>
+		<Time sr="con1">
+			<fh>0</fh>
+			<fm>0</fm>
+			<rep>1</rep>
+			<repval>1</repval>
+			<th>23</th>
+			<tm>59</tm>
+		</Time>
+	</Profile>
 	<Project sr="proj0">
 		<cdate>1380121947710</cdate>
 		<name>Clock2</name>
-		<pids>170,166,154,165,163,167</pids>
-		<tids>164,168,157,169</tids>
+		<pids>154,170,167,166,163,173,165</pids>
+		<tids>164,169,168,157,171</tids>
 		<Img sr="icon" ve="2">
 			<icn>2130837515</icn>
 		</Img>
 	</Project>
 	<Task sr="task157">
 		<cdate>1378387757963</cdate>
-		<edate>1380121437918</edate>
+		<edate>1380350515783</edate>
 		<id>157</id>
 		<nme>Battery</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="3">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%TMP</Str>
+			<Str sr="arg0" ve="3">%tmp</Str>
 			<Str sr="arg1" ve="3">%BATT*530/100</Str>
 			<Int sr="arg2" val="1"/>
 			<Int sr="arg3" val="0"/>
@@ -110,13 +132,13 @@
 			<Str sr="arg0" ve="3">Clock.image.w / Rectangle1</Str>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2">
-				<var>%TMP</var>
+				<var>%tmp</var>
 			</Int>
 			<Int sr="arg3" val="8"/>
 		</Action>
 		<Action sr="act2" ve="3">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%TMP</Str>
+			<Str sr="arg0" ve="3">%tmp</Str>
 			<Str sr="arg1" ve="3">#FF00FF00</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -126,7 +148,7 @@
 			<lhs>%BATT</lhs>
 			<op>3</op>
 			<rhs>40</rhs>
-			<Str sr="arg0" ve="3">%TMP</Str>
+			<Str sr="arg0" ve="3">%tmp</Str>
 			<Str sr="arg1" ve="3">#FFFFFF00</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -136,7 +158,7 @@
 			<lhs>%BATT</lhs>
 			<op>3</op>
 			<rhs>15</rhs>
-			<Str sr="arg0" ve="3">%TMP</Str>
+			<Str sr="arg0" ve="3">%tmp</Str>
 			<Str sr="arg1" ve="3">#FFFF0000</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -146,7 +168,7 @@
 			<lhs>%Oncharge</lhs>
 			<op>5</op>
 			<rhs>1</rhs>
-			<Str sr="arg0" ve="3">%TMP</Str>
+			<Str sr="arg0" ve="3">%tmp</Str>
 			<Str sr="arg1" ve="3">#FF0000FF</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -154,36 +176,77 @@
 		<Action sr="act6" ve="3">
 			<code>762</code>
 			<Str sr="arg0" ve="3">Clock.image.w / Rectangle1</Str>
-			<Str sr="arg1" ve="3">%TMP</Str>
-			<Str sr="arg2" ve="3">%TMP</Str>
+			<Str sr="arg1" ve="3">%tmp</Str>
+			<Str sr="arg2" ve="3">%tmp</Str>
 		</Action>
 	</Task>
 	<Task sr="task164">
 		<cdate>1380020277238</cdate>
-		<edate>1380122125222</edate>
+		<edate>1380350568118</edate>
 		<id>164</id>
-		<nme>ZoomUpdateTime</nme>
+		<nme>ZoomUpdate</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="3">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%time</Str>
+			<Str sr="arg1" ve="3">%TIME</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act1" ve="3">
 			<code>590</code>
-			<Str sr="arg0" ve="3">%TIME</Str>
+			<Str sr="arg0" ve="3">%time</Str>
 			<Str sr="arg1" ve="3">.</Str>
 			<Int sr="arg2" val="0"/>
 		</Action>
-		<Action sr="act1" ve="3">
-			<code>761</code>
-			<Str sr="arg0" ve="3">Clock.image.w / Hour</Str>
-			<Str sr="arg1" ve="3">file:/mnt/emmc/Tasker/clock2/clock-hour-%TIME1.png</Str>
-		</Action>
 		<Action sr="act2" ve="3">
 			<code>761</code>
+			<Str sr="arg0" ve="3">Clock.image.w / Hour</Str>
+			<Str sr="arg1" ve="3">file:/mnt/emmc/Tasker/clock2/clock-hour-%time1.png</Str>
+		</Action>
+		<Action sr="act3" ve="3">
+			<code>761</code>
 			<Str sr="arg0" ve="3">Clock.image.w / Minute</Str>
-			<Str sr="arg1" ve="3">file:/mnt/emmc/Tasker/clock2/clock-minute-%TIME2.png</Str>
+			<Str sr="arg1" ve="3">file:/mnt/emmc/Tasker/clock2/clock-minute-%time2.png</Str>
+		</Action>
+		<Action sr="act4" ve="3">
+			<code>721</code>
+			<Str sr="arg0" ve="3">Clock.image.w / Hour</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act5" ve="3">
+			<code>721</code>
+			<Str sr="arg0" ve="3">Clock.image.w / Minute</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act6" ve="3">
+			<code>761</code>
+			<lhs>%Wicon</lhs>
+			<op>9</op>
+			<rhs></rhs>
+			<Str sr="arg0" ve="3">Clock.image.w / Weather</Str>
+			<Str sr="arg1" ve="3">%Wicon</Str>
+		</Action>
+		<Action sr="act7" ve="3">
+			<code>721</code>
+			<lhs>%Wicon</lhs>
+			<op>9</op>
+			<rhs></rhs>
+			<Str sr="arg0" ve="3">Clock.image.w / Weather</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act8" ve="3">
+			<code>721</code>
+			<lhs>%Wicon</lhs>
+			<op>10</op>
+			<rhs></rhs>
+			<Str sr="arg0" ve="3">Clock.image.w / Weather</Str>
+			<Int sr="arg1" val="0"/>
 		</Action>
 	</Task>
 	<Task sr="task168">
 		<cdate>1380023659882</cdate>
-		<edate>1380119663135</edate>
+		<edate>1380149643437</edate>
 		<id>168</id>
 		<pri>10</pri>
 		<Action sr="act0" ve="3">
@@ -247,19 +310,100 @@
 	</Task>
 	<Task sr="task169">
 		<cdate>1380020277238</cdate>
-		<edate>1380122242290</edate>
+		<edate>1380346401402</edate>
 		<id>169</id>
 		<nme>ZoomBlankTime</nme>
 		<pri>10</pri>
 		<Action sr="act0" ve="3">
-			<code>761</code>
+			<code>721</code>
 			<Str sr="arg0" ve="3">Clock.image.w / Hour</Str>
-			<Str sr="arg1" ve="3">file:/mnt/emmc/Tasker/clock2/clock-hour-XX.png</Str>
+			<Int sr="arg1" val="0"/>
 		</Action>
 		<Action sr="act1" ve="3">
-			<code>761</code>
+			<code>721</code>
 			<Str sr="arg0" ve="3">Clock.image.w / Minute</Str>
-			<Str sr="arg1" ve="3">file:/mnt/emmc/Tasker/clock2/clock-minute-XX.png</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task171">
+		<cdate>1380346616411</cdate>
+		<edate>1380350699913</edate>
+		<id>171</id>
+		<nme>LoadWeather</nme>
+		<pri>10</pri>
+		<Action sr="act0" ve="3">
+			<code>549</code>
+			<Str sr="arg0" ve="3">%Wicon</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act1" ve="3">
+			<code>118</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">api.openweathermap.org</Str>
+			<Str sr="arg1" ve="3">data/2.5/weather?q=Wuhu&amp;mode=xml&amp;units=metric</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="10"/>
+			<Str sr="arg5" ve="3">text/xml</Str>
+			<Str sr="arg6" ve="3"/>
+		</Action>
+		<Action sr="act10" ve="3">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%Wicon</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act2" ve="3">
+			<code>137</code>
+			<lhs>%HTTPR</lhs>
+			<op>6</op>
+			<rhs>200</rhs>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+		</Action>
+		<Action sr="act3" ve="3">
+			<code>548</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">%HTTPR</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act4" ve="3">
+			<code>548</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">%HTTPD</Str>
+			<Int sr="arg1" val="0"/>
+		</Action>
+		<Action sr="act5" ve="3">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%http</Str>
+			<Str sr="arg1" ve="3">%HTTPD</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act6" ve="3">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%http</Str>
+			<Str sr="arg1" ve="3">icon="</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act7" ve="3">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%http</Str>
+			<Str sr="arg1" ve="3">%http2</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act8" ve="3">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%http</Str>
+			<Str sr="arg1" ve="3">"/&gt;</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act9" ve="3">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Wicon</Str>
+			<Str sr="arg1" ve="3">file:/mnt/emmc/Tasker/clock2/weather-%http1.png</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
 		</Action>
 	</Task>
 </TaskerData>
