@@ -2,7 +2,7 @@
 	<Profile sr="prof154" ve="2">
 		<cdate>1378387752687</cdate>
 		<clp>true</clp>
-		<edate>1380130397796</edate>
+		<edate>1380351397860</edate>
 		<id>154</id>
 		<mid0>157</mid0>
 		<Event sr="con0" ve="2">
@@ -86,7 +86,7 @@
 	<Profile sr="prof173" ve="2">
 		<cdate>1380350652870</cdate>
 		<clp>true</clp>
-		<edate>1380350738190</edate>
+		<edate>1380352942060</edate>
 		<id>173</id>
 		<mid0>171</mid0>
 		<nme>WeatherUpdate</nme>
@@ -108,15 +108,15 @@
 	<Project sr="proj0">
 		<cdate>1380121947710</cdate>
 		<name>Clock2</name>
-		<pids>154,170,167,166,163,173,165</pids>
-		<tids>164,169,168,157,171</tids>
+		<pids>167,173,170,154,166,163,165</pids>
+		<tids>164,169,157,168,171</tids>
 		<Img sr="icon" ve="2">
 			<icn>2130837515</icn>
 		</Img>
 	</Project>
 	<Task sr="task157">
 		<cdate>1378387757963</cdate>
-		<edate>1380350515783</edate>
+		<edate>1380351397860</edate>
 		<id>157</id>
 		<nme>Battery</nme>
 		<pri>10</pri>
@@ -327,7 +327,7 @@
 	</Task>
 	<Task sr="task171">
 		<cdate>1380346616411</cdate>
-		<edate>1380350699913</edate>
+		<edate>1380352942060</edate>
 		<id>171</id>
 		<nme>LoadWeather</nme>
 		<pri>10</pri>
@@ -338,7 +338,6 @@
 		</Action>
 		<Action sr="act1" ve="3">
 			<code>118</code>
-			<on>false</on>
 			<Str sr="arg0" ve="3">api.openweathermap.org</Str>
 			<Str sr="arg1" ve="3">data/2.5/weather?q=Wuhu&amp;mode=xml&amp;units=metric</Str>
 			<Str sr="arg2" ve="3"/>
@@ -349,6 +348,7 @@
 		</Action>
 		<Action sr="act10" ve="3">
 			<code>548</code>
+			<on>false</on>
 			<Str sr="arg0" ve="3">%Wicon</Str>
 			<Int sr="arg1" val="0"/>
 		</Action>
