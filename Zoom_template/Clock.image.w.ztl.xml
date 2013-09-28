@@ -22,7 +22,7 @@
 		<class name="ImageElement" index="state0">
 			<alpha>255</alpha>
 			<stateName></stateName>
-			<uri>content://media/external/images/media/1480</uri>
+			<uri>file:/mnt/emmc/Tasker/clock2/clock-background.png</uri>
 		</class>
 	</class>
 	<class name="Element" index="elements1">
@@ -62,6 +62,24 @@
 		</class>
 	</class>
 	<class name="Element" index="elements3">
+		<elementType>Image</elementType>
+		<heightLand>323</heightLand>
+		<heightPort>312</heightPort>
+		<name>Weather</name>
+		<visible>true</visible>
+		<widthLand>528</widthLand>
+		<widthPort>528</widthPort>
+		<xLand>0</xLand>
+		<xPort>0</xPort>
+		<yLand>0</yLand>
+		<yPort>0</yPort>
+		<class name="ImageElement" index="state0">
+			<alpha>255</alpha>
+			<stateName></stateName>
+			<uri>file:/mnt/emmc/Tasker/clock2/weather-01d.png</uri>
+		</class>
+	</class>
+	<class name="Element" index="elements4">
 		<elementType>Rect</elementType>
 		<heightLand>8</heightLand>
 		<heightPort>8</heightPort>
