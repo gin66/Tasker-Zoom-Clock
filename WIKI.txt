@@ -3,6 +3,7 @@ This profile together with a zoom-widget is for advanced users, as the documenta
 **Features**
 * Highly configurable design with inkscape
 * Binary and 24 hour clock possible - even mixed together
+* Weather-Picture from openweathermap.org (but only in github)
 * Using standard Tasker/Zoom
 
 **Prerequisites**
