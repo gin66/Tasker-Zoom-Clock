@@ -10,10 +10,18 @@ BEGIN {
 			i++;	b *= 2
 		}
 	}
+}
 
-	heightLand = 323
-	widthLand  = 528
+/width=/ && (widthLand == "") { 
+	match($0,/.*width="([0-9]*)".*/,fld)
+	widthLand = fld[1]
+	widthPort = fld[1]
 	xLand      = 0
+}
+/height=/ && (heightLand == "") { 
+	match($0,/.*height="([0-9]*)".*/,fld)
+	heightLand = fld[1]
+	heightPort = fld[1]
 	yLand      = 0
 }
 (length(N)>0)	{gsub(">00<",">" N "<") }
@@ -98,15 +106,15 @@ END {
 function simple_image(layer) {
 	x =     "\t<class name=\"Element\" index=\"elements" xmlcount "\">"
 	x = x "\n\t\t<elementType>Image</elementType>"
-	x = x "\n\t\t<heightLand>323</heightLand>"
-	x = x "\n\t\t<heightPort>312</heightPort>"
 	x = x "\n\t\t<name>" layer "</name>"
 	x = x "\n\t\t<visible>true</visible>"
-	x = x "\n\t\t<widthLand>528</widthLand>"
-	x = x "\n\t\t<widthPort>528</widthPort>"
-	x = x "\n\t\t<xLand>0</xLand>"
+	x = x "\n\t\t<heightLand>" heightLand "</heightLand>"
+	x = x "\n\t\t<widthLand>" widthLand "</widthLand>"
+	x = x "\n\t\t<xLand>" xLand "</xLand>"
+	x = x "\n\t\t<yLand>" yLand "</yLand>"
+	x = x "\n\t\t<heightPort>" heightPort "</heightPort>"
+	x = x "\n\t\t<widthPort>" widthPort "</widthPort>"
 	x = x "\n\t\t<xPort>0</xPort>"
-	x = x "\n\t\t<yLand>0</yLand>"
 	x = x "\n\t\t<yPort>0</yPort>"
 	x = x "\n\t\t<class name=\"ImageElement\" index=\"state0\">"
 	x = x "\n\t\t\t<alpha>255</alpha>"
@@ -136,15 +144,15 @@ function sensor(group,name) {
 
 	x =     "\t<class name=\"Element\" index=\"elements" xmlcount "\">"
 	x = x "\n\t\t<elementType>Rect</elementType>"
-	x = x "\n\t\t<heightLand>" heightLand "</heightLand>"
-	x = x "\n\t\t<heightPort>" rect_h "</heightPort>"
 	x = x "\n\t\t<name>" name "</name>"
 	x = x "\n\t\t<visible>true</visible>"
+	x = x "\n\t\t<heightLand>" heightLand "</heightLand>"
 	x = x "\n\t\t<widthLand>" widthLand "</widthLand>"
-	x = x "\n\t\t<widthPort>" rect_w "</widthPort>"
 	x = x "\n\t\t<xLand>" xLand "</xLand>"
-	x = x "\n\t\t<xPort>" rect_x "</xPort>"
 	x = x "\n\t\t<yLand>" yLand "</yLand>"
+	x = x "\n\t\t<heightPort>" rect_h "</heightPort>"
+	x = x "\n\t\t<widthPort>" rect_w "</widthPort>"
+	x = x "\n\t\t<xPort>" rect_x "</xPort>"
 	x = x "\n\t\t<yPort>" rect_y "</yPort>"
 	x = x "\n\t\t<class name=\"RectElement\" index=\"state0\">"
 	x = x "\n\t\t\t<cornerRadius>0</cornerRadius>"
