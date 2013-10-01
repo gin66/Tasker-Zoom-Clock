@@ -1,0 +1,31 @@
+<class name="Template" index="">
+	<backColour>#00000000</backColour>
+	<borderColour>#FFFFFFFF</borderColour>
+	<borderWidth>0</borderWidth>
+	<cellData>122,154,16,14;159,111,0,0</cellData>
+	<cellsHigh>4</cellsHigh>
+	<cellsWide>4</cellsWide>
+	<marginWidth>0</marginWidth>
+	<name>Reference-4X4</name>
+	<class name="Element" index="elements0">
+		<elementType>Text</elementType>
+		<heightLand>237</heightLand>
+		<heightPort>656</heightPort>
+		<name>BigA</name>
+		<visible>true</visible>
+		<widthLand>349</widthLand>
+		<widthPort>534</widthPort>
+		<xLand>288</xLand>
+		<xPort>1</xPort>
+		<yLand>236</yLand>
+		<yPort>0</yPort>
+		<class name="TextElement" index="state0">
+			<centre>true</centre>
+			<stateName></stateName>
+			<text>A</text>
+			<textColour>#FF000000</textColour>
+			<textScaleWidth>1.0</textScaleWidth>
+			<textSize>160</textSize>
+		</class>
+	</class>
+</class>

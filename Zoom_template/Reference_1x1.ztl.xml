@@ -1,0 +1,31 @@
+<class name="Template" index="">
+	<backColour>#00000000</backColour>
+	<borderColour>#FFFFFFFF</borderColour>
+	<borderWidth>0</borderWidth>
+	<cellData>122,154,16,14;159,111,0,0</cellData>
+	<cellsHigh>1</cellsHigh>
+	<cellsWide>1</cellsWide>
+	<marginWidth>0</marginWidth>
+	<name>Reference-1x1</name>
+	<class name="Element" index="elements0">
+		<elementType>Text</elementType>
+		<heightLand>153</heightLand>
+		<heightPort>153</heightPort>
+		<name>FitLineA</name>
+		<visible>true</visible>
+		<widthLand>121</widthLand>
+		<widthPort>121</widthPort>
+		<xLand>0</xLand>
+		<xPort>0</xPort>
+		<yLand>0</yLand>
+		<yPort>0</yPort>
+		<class name="TextElement" index="state0">
+			<centre>true</centre>
+			<stateName></stateName>
+			<text>A</text>
+			<textColour>#FF000000</textColour>
+			<textScaleWidth>1.0</textScaleWidth>
+			<textSize>97</textSize>
+		</class>
+	</class>
+</class>
