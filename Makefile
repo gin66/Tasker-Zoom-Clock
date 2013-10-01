@@ -9,6 +9,9 @@ all:	png/clock-background.png		\
 
 .SECONDARY:
 
+Zoom_template/auto.ztl.xml:	clock.awk clock.svg
+	gawk -v ZOOM=1 -f clock.awk clock.svg >$@
+
 %/.dir:
 	mkdir -p $*
 	touch $*/.dir
